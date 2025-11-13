@@ -2,11 +2,11 @@
 
 This document organizes all the notes into a structured guide, in this order:
 
-1. What agents are (concepts & mental models)  
-2. What Claude Code is and the features/tools it provides  
-3. How to organize Claude Code (memory, files, team practices)  
-4. How to actually use Claude Code (workflows & patterns)  
-5. Different AI models and what they’re good for  
+1. What agents are (concepts & mental models)
+2. What Claude Code is and the features/tools it provides
+3. How to organize Claude Code (memory, files, team practices)
+4. How to actually use Claude Code (workflows & patterns)
+5. Different AI models and what they’re good for
 6. A concrete workflow: Gemini for PRDs → Claude Code for planning & coding → docs and TODOs along the way  
 
 ---
@@ -74,10 +74,10 @@ Within the Claude ecosystem, “agents” interact with:
 
 Claude Code is an **AI IDE and agent framework** centered on:
 
-- Working directly with your filesystem  
-- Reading and writing code  
-- Running commands and tests  
-- Managing context and memory over time  
+- Working directly with your filesystem
+- Reading and writing code
+- Running commands and tests
+- Managing context and memory over time
 
 ### 2.1 Major Features
 
@@ -186,7 +186,7 @@ Claude uses several layers of memory:
     - e.g. apps/ui/CLAUDE.md, apps/api/CLAUDE.md, cdk/CLAUDE.md.
   - Only loaded when editing files in that subtree, limiting context bloat.
 
-**Behavior:**  
+**Behavior:**
 When Claude runs in a directory, it recursively loads CLAUDE.md and CLAUDE.local.md from that directory upward to the root, plus the global user file.
 
 ### 3.2 The Cost of Forgetting
