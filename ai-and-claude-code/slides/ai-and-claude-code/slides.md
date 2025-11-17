@@ -837,26 +837,15 @@ Real patterns you can use tomorrow
 </div>
 
 ---
-layout: section
----
 
-# The Ultimate Workflow
+# Ultimate Workflow: Gemini + Claude Code
 
-Gemini + Claude Code = 🔥
-
----
-
-# Step 1: Brainstorm in Gemini
-
-<div class="text-center mb-4 text-lg opacity-90">
-Start with Gemini for high-level planning
-</div>
-
-<div class="grid grid-cols-2 gap-8 text-sm">
+<div class="grid grid-cols-4 gap-4 text-sm">
 
 <div>
 
-### Write a PRD
+### 1. Brainstorm in Gemini
+##### Write a PRD
 
 - Goals and non-goals
 - User stories
@@ -868,183 +857,33 @@ Start with Gemini for high-level planning
 
 <div>
 
-### Break It Down
-
-- Sprints
-- Epics
-- User stories with acceptance criteria
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-blue-500/10 border border-blue-500/50 rounded text-sm">
-<strong>Why Gemini?</strong> Excellent at structured documents and has Google Search for research
-</div>
-
----
-
-# Step 2: Move to Claude Code
-
-<div class="text-center mb-6 text-lg opacity-90">
-Bring the PRD into your project
-</div>
-
-<div class="grid grid-cols-3 gap-6 text-sm">
-
-<div>
-
-### Setup
-
+### 2. Move to Claude Code
 - Save PRD to `docs/prd-new-feature.md`
 - Update `CLAUDE.md` to reference it
 - "Read this PRD when working on feature X"
-
-</div>
-
-<div>
-
-### Plan Mode
-
 - Start Claude Code in Plan mode
 - "Think hard about implementation"
 - Claude creates:
   - `plan.md`
   - `architecture.md`
   - `decisions.md`
-
 </div>
 
 <div>
 
-### Ready
-
-- Clear roadmap
-- Claude knows context
-- Time to implement
-
-</div>
-
-</div>
-
----
-
-# Step 3: Build Incrementally
-
-<div class="text-center mb-6 text-lg opacity-90">
-Small chunks, constant progress
-</div>
-
-<div class="grid grid-cols-2 gap-8 text-sm">
-
-<div>
-
-### Feature by Feature
-
+### 3. Build Incrementally
+- Small chunks, constant progress
 - Pick one small feature from plan.md
-- "Implement user registration (no OAuth yet)"
-
-### Choose Your Mode
-
-- Default for learning/high-stakes
-- Auto when you trust the pattern
-- Plan for complex pieces
+  - "Implement user registration (no OAuth yet)"
 
 </div>
 
 <div>
 
-### Use Right Workflow
-
-- TDD for logic-heavy features
-- Screenshot iteration for UI
-- Refactor workflow for cleanup
-
-### Update Docs
-
-- Check off tasks in plan.md
-- Update decisions.md with changes
-- Add learnings to CLAUDE.md
-
-</div>
-
-</div>
-
----
-
-# Step 4: Loop Back to Gemini
-
-<div class="text-center mb-6 text-lg opacity-90">
-After implementing, refine the plan
-</div>
-
-<div class="grid grid-cols-2 gap-8 text-sm">
-
-<div>
-
-### Back to Gemini
-
-- Take what you learned
-- Update PRD with new insights
-- Plan the next sprint
-- Adjust requirements based on reality
-
-</div>
-
-<div>
-
-### Back to Claude Code
-
-- Implement the next batch
-- Update docs
-- Commit progress
-- Repeat the cycle
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-green-500/10 border border-green-500/50 rounded text-sm">
-<strong>The magic:</strong> Gemini for strategy, Claude Code for execution, constant iteration
-</div>
-
----
-
-# Step 5: Continuous Improvement
-
-<div class="text-center mb-6 text-lg opacity-90">
-Make the system better over time
-</div>
-
-<div class="grid grid-cols-3 gap-6 text-sm">
-
-<div>
-
-### End of Session
-
-- "What did we learn?"
-- "What patterns should we remember?"
-- "What did you get wrong that we fixed?"
-
-</div>
-
-<div>
-
-### Update Memory
-
-- Shared learnings → `CLAUDE.md`
-- Personal tips → `CLAUDE.local.md`
-- Component rules → `apps/X/CLAUDE.md`
-
-</div>
-
-<div>
-
-### The Flywheel
-
-- Better docs → Better first attempts
-- Better attempts → Less rework
-- Less rework → More time for features
+### 4. Iterate
+- Update Memory
+- Update Gemini with changes made my claude
+- Next Feature
 
 </div>
 
@@ -1068,15 +907,12 @@ layout: section
 - They need guidance, review, and iteration
 - Small steps win every time
 
-
-
 ### 2. Use the right tool for the job
 
 - ChatGPT for quick questions
 - Gemini for PRDs and planning
 - Claude Code for building
 - Perplexity for research
-
 
 
 ### 3. Memory is your superpower
